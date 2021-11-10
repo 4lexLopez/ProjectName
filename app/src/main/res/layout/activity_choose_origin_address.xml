@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4C568"
+    android:orientation="vertical"
+    android:padding="15dp"
+    app:layoutDescription="@xml/activity_choose_origin_address_scene"
+    tools:context=".ChooseOriginAddress">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#E4C568">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/currentGpsPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#BFA967"
+                android:text="Usar mi posicion GPS" />
+
+            <Spinner
+                android:id="@+id/myAdresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#BFA967"
+                android:popupBackground="#BFA967"
+                android:prompt="@string/app_name" />
+
+            <Button
+                android:id="@+id/makeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#BFA967"
+                android:text="Solicitar domicilio" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

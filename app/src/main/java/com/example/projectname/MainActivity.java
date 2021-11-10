@@ -1,15 +1,13 @@
 package com.example.projectname;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.INotificationSideChannel;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
-import android.widget.ViewAnimator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(!user.equals("") && !password.equals("")) {
             if(user.equals("admin") && password.equals("admin")) {
-                Intent intent = new Intent(this, ConfirmLogin.class);
+                Intent intent = new Intent(this, ChooseOriginAddress.class);
                 startActivity(intent);
             }
             else {
